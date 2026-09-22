@@ -117,7 +117,7 @@
     <div class="specs">
       <div class="spec"><small>Processor</small><strong>AMD Ryzen 5 7600X</strong>6 cores / 12 threads</div>
       <div class="spec"><small>Graphics</small><strong>NVIDIA GeForce RTX 3060</strong>12 GB · driver 610.88</div>
-      <div class="spec"><small>Memory</small><strong>32 GB Kingston DDR5</strong>2 × 16 GB · 4800 MT/s</div>
+      <div class="spec"><small>Memory</small><strong>32 GB Kingston DDR5</strong>2 × 16 GB · 5200 MT/s</div>
       <div class="spec"><small>Motherboard</small><strong>ASUS PRIME B650-PLUS</strong>BIOS 3222 · 2025-03-04</div>
       <div class="spec"><small>System storage</small><strong>HP EX900 1 TB NVMe</strong>Healthy / operational</div>
       <div class="spec"><small>Operating system</small><strong>Windows 11 Home 25H2</strong>Activated · build 26200.9457</div>
@@ -136,8 +136,8 @@
         </tr>
         <tr>
           <td><strong>Memory stability</strong></td><td><span class="badge pass">PASS</span></td>
-          <td>Prime95 memory-focused stress, 16 GB allocation, 15:01</td>
-          <td>63 verified self-tests · 0 calculation errors · 46.2°C DIMM peak · 84.1°C CPU peak</td>
+          <td>Prime95 memory-focused stress at DDR5-5200, 16 GB allocation, 15:24</td>
+          <td>69 verified self-tests · 0 calculation errors · 0 WHEA or system-error events</td>
         </tr>
         <tr>
           <td><strong>CPU thermal safeguards</strong></td><td><span class="badge pass">PASS*</span></td>
@@ -168,7 +168,7 @@
     <h2>CPU thermal behavior</h2>
     <div class="finding">
       <strong>The processor remained stable while its built-in thermal controls were exercised.</strong>
-      AMD Precision Boost 2 continually monitors temperature, power, current, workload, and active cores, automatically leveling performance when a limit is reached. During the harshest synthetic Prime95 phase, the monitor recorded a brief 96.8°C reading and ended the run; there were no calculation or hardware errors. A separate 15-minute sustained CPU/memory test passed 63 verified self-tests with a peak of 84.1°C. This is not a detected component failure. <a href="https://www.amd.com/en/resources/support-articles/faqs/CPU-PB2.html">AMD Precision Boost 2</a> · <a href="https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x.html">7600X specification</a>.
+      AMD Precision Boost 2 continually monitors temperature, power, current, workload, and active cores, automatically leveling performance when a limit is reached. During the harshest synthetic Prime95 phase, the monitor recorded a brief 96.8°C reading and ended the run; there were no calculation or hardware errors. An earlier monitored 15-minute CPU/memory run passed 63 verified self-tests with a peak of 84.1°C. After configuring the RAM at its rated 5200 MT/s, a second 15.4-minute memory-focused validation passed 69 verified self-tests with no calculation or WHEA errors. This is not a detected component failure. <a href="https://www.amd.com/en/resources/support-articles/faqs/CPU-PB2.html">AMD Precision Boost 2</a> · <a href="https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x.html">7600X specification</a>.
     </div>
   </section>
 
@@ -188,4 +188,3 @@
 </main>
 </body>
 </html>
-
